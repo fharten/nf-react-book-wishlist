@@ -296,8 +296,14 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-\[3px\] {
+    height: 3px;
+  }
   .h-\[350px\] {
     height: 350px;
+  }
+  .h-\[375px\] {
+    height: 375px;
   }
   .min-h-screen {
     min-height: 100vh;

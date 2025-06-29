@@ -95,7 +95,7 @@ export function App() {
                 <>
                   <div
                     key={book.id}
-                    className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] z-0 drop-shadow-2xl drop-shadow-gray-800'
+                    className='relative  h-[375px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] z-0 drop-shadow-2xl drop-shadow-gray-800'
                   >
                     <span className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-gilroy z-0'>
                       <div className='mt-6 border border-dashed text-center bg-gray-100/85 p-4'>
@@ -123,7 +123,7 @@ export function App() {
               {unreadBooks.map((book) => (
                 <div
                   key={book.id}
-                  className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] drop-shadow-2xl drop-shadow-gray-800'
+                  className='relative h-[375px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] drop-shadow-2xl drop-shadow-gray-800'
                 >
                   <span className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-gilroy'>
                     <div className='mt-6 border border-dashed text-center bg-gray-100/85 p-4'>
