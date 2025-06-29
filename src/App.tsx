@@ -7,7 +7,7 @@ export function App() {
   const [books, setBooks] = useState<Book[]>(bookdata);
   const [author, setAuthor] = useState<string>('');
   const [title, setTitle] = useState<string>('');
-  const [read, setRead] = useState<boolean>(false);
+  // const [read, setRead] = useState<boolean>(false);
   const [readBooks, setReadBooks] = useState<Book[]>([]);
   const [unreadBooks, setUnreadBooks] = useState<Book[]>([]);
 
@@ -22,7 +22,7 @@ export function App() {
         id: books.length + 1,
         title,
         author,
-        read,
+        read: false,
       },
       ...books,
     ]);
@@ -51,7 +51,7 @@ export function App() {
           BooksBooksBooks
         </h1>
         {shelf('')}
-        <div className='flex mt-6'>
+        <div className='flex my-2'>
           <div className='flex mx-auto'>
             <form className='space-x-2 flex'>
               <input
@@ -95,7 +95,7 @@ export function App() {
                 <>
                   <div
                     key={book.id}
-                    className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] z-0'
+                    className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] z-0 drop-shadow-2xl drop-shadow-gray-800'
                   >
                     <span className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-gilroy z-0'>
                       <div className='mt-6 border border-dashed text-center bg-gray-100/85 p-4'>
@@ -123,7 +123,7 @@ export function App() {
               {unreadBooks.map((book) => (
                 <div
                   key={book.id}
-                  className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px]'
+                  className='relative h-[350px] border w-full bg-gray-200 bg-[radial-gradient(#525252_1px,transparent_1px)] [background-size:16px_16px] drop-shadow-2xl drop-shadow-gray-800'
                 >
                   <span className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-gilroy'>
                     <div className='mt-6 border border-dashed text-center bg-gray-100/85 p-4'>

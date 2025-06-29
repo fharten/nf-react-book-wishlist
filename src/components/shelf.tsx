@@ -1,6 +1,6 @@
 export const shelf = (postIt: string): React.ReactNode => {
   return (
-    <div className='relative'>
+    <div className='relative z-19'>
       <hr className='border-8 border-slate-900 drop-shadow-2xl drop-shadow-neutral-900' />
       {postIt && (
         <div
